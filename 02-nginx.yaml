@@ -6,7 +6,7 @@
     ansible.builtin.dnf:
       name: ngnix
       state: latest
-  -name: start ngnix
+  - name: start ngnix
     ansible.builtin.service:
       name: ngnix
       state: started
