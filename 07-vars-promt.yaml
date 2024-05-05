@@ -1,6 +1,12 @@
 - name: variables from promt
   hosts: localhost
-  vars_
+  vars_prompt:
+  - name: USERNAME
+    promt: Please enter username
+    private: false
+  - name: PASSWORD
+    promt: Please enter password
+    private: true
   tasks:
   - name: print information
     ansible.builtin.debug:
