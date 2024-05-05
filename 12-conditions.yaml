@@ -4,7 +4,12 @@
   tasks:
   - name: Check user exist or not
     ansible.builtin.command: id expense1
+    register: USER
     ignore_errors: true
+
+  - name: user information
+    ansible.builtin.debug:
+      msg: "User information = {{USER}}"
 
   - name: say Hello
     ansible.builtin.debug:
