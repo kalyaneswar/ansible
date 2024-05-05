@@ -8,6 +8,7 @@
   - name: print overide information
     vars:
       Course: "Terraform" 
+      Duration: "15hrs"
     ansible.builtin.debug:
       msg: "Hi i'm learning {{Course}} from trainer {{Trainer}}, and the duration is {{Duration}}. "
 
