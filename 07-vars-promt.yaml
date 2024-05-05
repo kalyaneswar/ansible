@@ -1,0 +1,7 @@
+- name: variables from promt
+  hosts: localhost
+  vars_
+  tasks:
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, username: {{USERNAME}}. password {{PASSWORD}}. "
