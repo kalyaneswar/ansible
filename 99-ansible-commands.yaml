@@ -1,0 +1,14 @@
+
+-------------------------------------------------------------
+1
+-------------------------------------------------------------# to run ansible 
+#  ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 03-multi-play.yaml
+This Ansible command executes a playbook named "03-multi-play.yaml" with some specific options:
+
+-i inventory.ini: Specifies the inventory file to use, which contains the list of hosts where Ansible will execute tasks.
+-e ansible_user=ec2-user: Sets the remote user to "ec2-user". This specifies the username Ansible will use to connect to the remote hosts. In this case, it's likely connecting to Amazon EC2 instances where the default username is often "ec2-user".
+-e ansible_password=DevOps321: Sets the password Ansible will use to authenticate with the remote hosts. This is unusual in Ansible, as it typically uses SSH keys for authentication. Using passwords like this is less secure than SSH keys and not commonly recommended.
+So, this command essentially runs a playbook on a group of hosts specified in the inventory file, connecting as "ec2-user" and providing the password "DevOps321" for authentication.
+-------------------------------------------------------------
+2
+-------------------------------------------------------------
