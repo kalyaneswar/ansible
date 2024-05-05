@@ -1,0 +1,16 @@
+- name: Variables with prefreance
+  hosts: localhost
+  vars:
+    WISHES: "Morning from PLAY Variable"
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: WISHES
+    prompt: Please enter WISHES
+    private: false
+  tasks:
+  - name: check prefreance
+    vars:
+      WISHES: "Morning from TASK Variable"
+    ansible.builtin.debug:
+      msg: "Good {{WISHES}}"
