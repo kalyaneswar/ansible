@@ -15,5 +15,7 @@
   - name: print Variable
     ansible.builtin.debug:
       msg: "Course :{{Course}} with tools {{Tools}} and Experiance is : {{Experiance}} and RealProject is {{RealProject}}"
-      
+# output
+#  "msg": "Course :Devops with AWS with tools ['Linux', 'Shell', 'Ansible'] and Experiance is : {'Devops': 3, 'AWS': 2, 'Docker': 1} and RealProject is True"
+
 
