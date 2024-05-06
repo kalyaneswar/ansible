@@ -1,0 +1,9 @@
+- name: loops demo
+  hosts: localhost
+  tasks:
+  ansible.buildin.debug:
+    msg: "Hello {{items}}"
+  loop:
+    - linux
+    - ansible
+    - sql
