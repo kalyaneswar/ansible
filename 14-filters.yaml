@@ -3,8 +3,9 @@
   tasks:
   - name: print default values
     ansible.builtin.debug:
-      msg: "Hello {{course | defalut('ansible') }}"
+      msg: "Hello {{Course | defalut('ansible') }}"
 - name: upper case
+  hosts: localhost
   vars:
     greeting: "Hello, Good Morning"
   tasks:
