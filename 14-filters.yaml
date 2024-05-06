@@ -3,11 +3,11 @@
   tasks:
   - name: print default values
     ansible.builtin.debug:
-    msg: "Hello {{course | defalut('ansible') }}"
+      msg: "Hello {{course | defalut('ansible') }}"
 - name: upper case
   vars:
     greeting: "Hello, Good Morning"
   tasks:
   - name: conver into upper case
-  ansible.builtin.debug:
-    msg: "{{greeting | upper}}"
+    ansible.builtin.debug:
+      msg: "{{greeting | upper}}"
