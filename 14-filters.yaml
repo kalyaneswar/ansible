@@ -3,15 +3,15 @@
   tasks:
   - name: print default values
     ansible.builtin.debug:
-      msg: "Hello {{Course | defalut('ansible') }}"
-# - name: upper case
-#   hosts: localhost
-#   vars:
-#     greeting: "Hello, Good Morning"
-#   tasks:
-#   - name: conver into upper case
-#     ansible.builtin.debug:
-#       msg: "{{greeting | upper}}"
+      msg: "Hello {{Course | default('ansible') }}"
+- name: upper case
+  hosts: localhost
+  vars:
+    greeting: "Hello, Good Morning"
+  tasks:
+  - name: conver into upper case
+    ansible.builtin.debug:
+      msg: "{{greeting | upper}}"
 
 # - name: default value
 #   hosts: localhost
