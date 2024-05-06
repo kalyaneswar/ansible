@@ -47,4 +47,4 @@
   tasks:
   - name: Maximum values from list
     ansible.builtin.debug:
-      msg: "{{ numbers | min }}"
+      msg: "{{ numbers | max }}"
