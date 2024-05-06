@@ -1,7 +1,7 @@
 - name: loops demo
   hosts: localhost
   tasks:
-  ansible.buildin.debug:
+  ansible.builtin.debug:
     msg: "Hello {{items}}"
   loop:
     - linux
